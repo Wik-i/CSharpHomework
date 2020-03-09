@@ -122,7 +122,7 @@ namespace Class3
     {
         protected double radius;
         public double Radius { get => radius; set => radius = value; }
-        protected double Pi;
+        //protected double Pi;
         public string name;
         public string Name { get => name; }
 
@@ -130,7 +130,7 @@ namespace Class3
         {
             if (radius<0) {Console.WriteLine("The radius is invalid"); return; }
             this.radius = radius;
-            Pi = 3.1415926535;
+            //Pi = 3.1415926535;
             this.name = "Circle";
         }
         public override bool IsLegal()
@@ -139,7 +139,7 @@ namespace Class3
         }
         public override double GetArea()
         {
-            return Pi *radius*radius;
+            return Math.PI *radius*radius;
         }
 
     }
